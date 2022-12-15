@@ -20,9 +20,10 @@ document.getElementById('add').addEventListener('click' , () => {
 
 function createDeleteButton(id) {
     let btn = document.createElement('button');
+    btn.className = 'btn btn-primary';
     btn.id = id;
-    btn.innerHTML = "Delete";
-    btn.oneClick = () => {
+    btn.innerHTML = 'Delete';
+    btn.onclick = () => {
         console.log(`Deleting row with id: item-${id}`);
         let elementToDelete = document.getElementById(`item-${id}`);
         elementToDelete.parentNode.removeChild(elementToDelete);
