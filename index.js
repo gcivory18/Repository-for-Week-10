@@ -1,3 +1,7 @@
+console.log("this is another test");
+
+console.log("this is a test");
+
 let id = 0;
 
 document.getElementById('add').addEventListener('click' , () => {
